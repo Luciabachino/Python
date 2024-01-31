@@ -1,0 +1,25 @@
+name = input("Escribe tu nombre ")
+print("Hola", name, "hoy vamos a elegir el color de uñas que mejor te quede a ti")
+answer = input("¿Te divierte? (si/no)").lower()
+
+while answer != "no" and answer!= "si":
+  print(input("Tu respuesta no es correcta, ¿te divierte? (si/no) "))
+
+if answer == "no":
+   print("Que aburrida, tu te lo pierdes")
+
+elif answer == "si":
+   answer_1 = input("¿Tu pelo es claro o oscuro? (claro/oscuro) ").lower()
+   while answer_1 != "claro" and answer_1!= "oscuro":
+    answer_1=(input("Tu respuesta no es correcta, ¿Tu pelo es claro o oscuro? (claro/oscuro) "))
+   answer_2 = input("¿Y tu color de piel es clara o oscura? (clara/oscura)").lower()
+   while answer_2 != "clara" and answer_2!= "oscura":
+    answer_2=(input("Tu respuesta no es correcta, ¿Y tu color de piel es clara o oscura? (clara/oscura) "))
+   if answer_1 == "claro" and answer_2 == "clara":
+      print("Tu color de uñas ideal es el vía lactea")
+   elif answer_1 == "claro" and answer_2 == "oscura":
+      print ("Tu color de uñas ideal es rojo")
+   elif answer_1 == "oscuro" and answer_2 == "oscura":
+      print ("Tu color de uñas ideal es negro")
+   elif answer_1 == "oscuro" and answer_2 == "clara":
+      print ("Tu color de uñas ideal es naranja")
