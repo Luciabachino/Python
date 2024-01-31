@@ -1,0 +1,8 @@
+def compara_longitud(palabra_1,palabra_2):
+  if len(palabra_1) > len(palabra_2):
+    print ("La longitud de "+palabra_1+" es mayor que la de "+palabra_2)
+  elif len(palabra_2) > len(palabra_1):
+      print ("La longitud de "+palabra_2+" es mayor que la de "+palabra_1)
+  else:
+    print ("La longitud de "+palabra_2+" es la misma que la de "+palabra_1)
+compara_longitud("Naranja","Manzana")
