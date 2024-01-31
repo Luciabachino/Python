@@ -1,0 +1,7 @@
+num = int(input("Pon un numero del 1 al 20: "))
+if num<10:
+  print("El valor seleccionado es menor que 10")
+elif num>10:
+  print("El valor seleccionado es mayor que 10")
+elif num==10:
+  print("El valor seleccionado es 10")
