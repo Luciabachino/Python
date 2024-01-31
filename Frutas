@@ -1,0 +1,14 @@
+frutas = ["frutilla", "banana", "manzana", "naranja"]
+mensaje = "Las frutas seleccionadas son "
+cont = 0
+
+for fruta in frutas:
+  if cont <= 1:
+    mensaje = mensaje + fruta + ", "
+    cont = cont+1
+  elif cont == 2:
+    mensaje = mensaje + fruta + " y "
+    cont = cont+1
+  elif cont ==3:
+    mensaje = mensaje + fruta
+print(mensaje)
