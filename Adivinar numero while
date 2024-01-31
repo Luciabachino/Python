@@ -1,0 +1,8 @@
+num = int(input("Por favor, introduce un numero entre 1 y 9: "))
+while num<1 or num>9:
+  print("El valor introducido no es correcto")
+  num = int(input("Por favor, introduce un numero entre 1 y 9: "))
+  contador = 1
+  while contador <= int(num):
+    print("La iteracion número "+str(contador)+" ha finalizado")
+    contador = contador +1
