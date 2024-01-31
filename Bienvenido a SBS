@@ -1,0 +1,18 @@
+bienvenida = "bienvenido a SBS"
+bienvenida_mayuscula = bienvenida[0].upper() + bienvenida[1:]
+print(bienvenida_mayuscula)
+nombre = input("Pon tu nombre ")
+edad = int(input("¿Cuantos años tienes? "))
+asignaturas = ["fundamentos", "python", "google analytics"]
+if edad>=18:
+  master = input("¿Que master estas cursando? ")
+  numero = input("¿Cual es tu numero de alumno? ")
+  datos = [nombre, edad, master, numero]
+  asignaturas.append("estadistica")
+  print("Tus asignaturas cursadas son", asignaturas)
+  notas = ("fundamentos: " "10", "python: " "8", "google analytics: " "11", "estadistica: " "10")
+  print("Tus notas son", notas)
+  promedio = ((10+8+11+10)/4)
+  print("Tu promedio es ", promedio)
+else:
+  print("No estas habilitado en SBS. Gracias por tu tiempo")
