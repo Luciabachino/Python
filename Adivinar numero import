@@ -1,0 +1,11 @@
+import random
+numero_secreto = random.randint(1, 10)
+suposicion_usuario = 0
+while int(suposicion_usuario)!=int(numero_secreto):
+  suposicion_usuario = input("Introduce un numero del 1 al 10: ")
+  if int(suposicion_usuario)>int(numero_secreto):
+    print("El numero secreto es mas bajo")
+  elif int(suposicion_usuario)<int(numero_secreto):
+    print("El numero secreto es mas alto")
+  else:
+    print("Bien! Adivinaste el numero secreto")
