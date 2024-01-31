@@ -1,0 +1,26 @@
+class Vehiculo:
+  def __init__(self, marca, modelo, matricula):
+    self.marca = marca
+    self.modelo = modelo
+    self.matricula= matricula
+
+  def imprimir_informacion(self):
+    print(f"El vehiculo es {self.marca} {self.modelo} con matricula {self.matricula}")
+
+class coche(Vehiculo):
+  def __init__(self, marca, modelo, matricula, color):
+    super().__init__(marca, modelo, matricula)
+    self.color = color
+
+  def abrir_puertas(self):
+    print(f"Las puertas del coche estan abiertas y son de color {self.color}")
+
+v1 = Vehiculo("BMW", "hibrido", "ABC1234")
+v2 = coche("BMW", "hibrido", "ABC1234", "blanco")
+
+print(v1.marca, v1.modelo, v1.matricula)
+v1.imprimir_informacion()
+
+print(v2.marca, v2.modelo, v2.matricula, v2.color)
+v1.imprimir_informacion()
+v2.abrir_puertas()
