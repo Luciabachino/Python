@@ -1,0 +1,26 @@
+class Persona:
+  def __init__(self, sexo, tamaño, piel):
+    self.sexo = sexo
+    self.tamaño = tamaño
+    self.piel = piel
+
+  def imprimir_informacion (self):
+    print(f"La persona descripta es {self.sexo} es {self.tamaño} y de piel {self.piel}")
+
+class PersonaConPelo (Persona):
+  def __init__(self, sexo, tamaño, piel, pelo):
+    super().__init__(sexo, tamaño, piel)
+    self.pelo = pelo
+
+  def imprimir_persona (self):
+    print(f"La persona descripta es Marcos y su pelo es de color {self.pelo}")
+
+v1 = Persona("hombre", "alto", "negro")
+v2 = PersonaConPelo("hombre", "alto", "negro", "negro")
+
+print(v1.sexo, v1.tamaño, v1.piel)
+v1.imprimir_informacion ()
+
+print(v2.sexo, v2.tamaño, v2.piel, v2.pelo)
+v2.imprimir_informacion()
+v2.imprimir_persona()
