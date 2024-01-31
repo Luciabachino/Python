@@ -1,0 +1,6 @@
+usuario = {"nombre:" : "Antonio", "apellido:" : "Torres", "vía" : "Calle", "nombre via:" : "Alcala", "numero:" : "690", "CP:" : "28022", "dia_nacimiento:" : "24", "mes_nacimiento:" : "Setiembre", "año_nacimiento:" : "1978"}
+print(usuario)
+fecha_nacimiento = str(usuario["dia_nacimiento:"]) + "/" + str(usuario["mes_nacimiento:"]) + "/" + str(usuario["año_nacimiento:"])
+print(fecha_nacimiento)
+usuario["formacion:"] = "Ingeniero"
+print(usuario)
